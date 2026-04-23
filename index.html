@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancong Nusantara</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff8f0;
+}
+
+/* HERO */
+.hero {
+  background: url('https://via.placeholder.com/1200x500') center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 40px;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 16px;
+  background: #ff7a00;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #333;
+}
+nav a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+/* PRODUK */
+.container {
+  padding: 30px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+button {
+  background: #8B4513;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/* TESTI */
+.testi {
+  background: #eee;
+  padding: 30px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Pancong Hangat, Fresh dari Cetakan 🔥</h1>
+  <p>Siap temani malammu</p>
+  <button onclick="order('Pancong')">Pesan Sekarang</button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#produk">Menu</a>
+  <a href="#testi">Testimoni</a>
+</nav>
+
+<!-- PRODUK -->
+<div class="container" id="produk">
+  <h2>Menu Favorit</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Original</h3>
+      <p>Rp5.000</p>
+      <button onclick="order('Pancong Original')">Pesan</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Coklat</h3>
+      <p>Rp7.000</p>
+      <button onclick="order('Pancong Coklat')">Pesan</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- TESTIMONI -->
+<div class="testi" id="testi">
+  <h2>Kata Mereka</h2>
+  <p>"Enak banget, selalu beli lagi!"</p>
+  <p>"Murah tapi nagih 🔥"</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Pancong Nusantara</p>
+</footer>
+
+<script>
+function order(product) {
+  const phone = '6281234567890';
+  const message = `Halo, saya mau pesan ${product}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`);
+}
+</script>
+
+</body>
+</html>
