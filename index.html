@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pancong Nusantara</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff8f0;
+    }
+    header {
+      background: #8B4513;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #d2691e;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      color: #8B4513;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    button {
+      background: #8B4513;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #5a2e0f;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #8B4513;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pancong Nusantara</h1>
+  <p>Lezat, Hangat, dan Bikin Nagih!</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#produk">Produk</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<div class="container" id="produk">
+  <h2>Menu Favorit</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/200" alt="Pancong Original">
+      <h3>Pancong Original</h3>
+      <p class="price">Rp5.000</p>
+      <button onclick="order('Pancong Original')">Pesan</button>
+    </div>
+
+    <div class="card">
+      <img src="C:/Users/Frega/Downloads/10 of the World's Most Naturally Beautiful___" alt="Pancong Coklat">
+      <h3>Pancong Coklat</h3>
+      <p class="price">Rp7.000</p>
+      <button onclick="order('Pancong Coklat')">Pesan</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200" alt="Pancong Keju">
+      <h3>Pancong Keju</h3>
+      <p class="price">Rp8.000</p>
+      <button onclick="order('Pancong Keju')">Pesan</button>
+    </div>
+  </div>
+</div>
+
+<div class="c
